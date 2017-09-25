@@ -686,6 +686,11 @@ public:
     }
   }
 
+  bool callNumberNoWait(const String& number) {
+    sendAT(GF("D"), number, ";");
+    return true;
+  }
+
   bool callHangup() {
     sendAT(GF("H"));
     return waitResponse() == 1;

@@ -1112,7 +1112,7 @@ public:
     streamWrite("AT", cmd..., GSM_NL);
     stream.flush();
     TINY_GSM_YIELD();
-    //DBG("### AT:", cmd...);
+    DBG("### AT:", cmd...);
   }
 
   // TODO: Optimize this!

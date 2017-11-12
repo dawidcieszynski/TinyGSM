@@ -792,7 +792,8 @@ public:
 
     return true;
   }
-String deleteSMSOpt() {
+
+  String deleteSMSOpt() {
     sendAT(GF("+CMGD=?"));
       if (waitResponse() != 1) {
         return "";
